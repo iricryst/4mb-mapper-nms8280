@@ -2,8 +2,6 @@
 
 A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8280 MSX2, based on the original design by Hans Oranje. The board is intended to replace the stock memory while keeping the mapper at slot 3.2, with the required connections and piggybacking arranged on the PCB instead of a large wiring harness.
 
-> **Prototype warning:** This design has not been verified for production use. Confirm mechanical fit and electrical operation on the prototype before building or using the board.
-
 ## Contents
 
 - [Board images](#board-images)
@@ -22,17 +20,17 @@ Back of the PCB:
 
 ![IMG: PCB back](./img/back.png)
 
-Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_schema.png), and [annotated cutout diagram](./img/cutout_schema_marked.png).
+Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_schema.png),
 
 ## Design files
 
 - [KICAD](./KICAD/) contains the main schematic, PCB layout, and project files.
-- [kicad_alll_smd](./kicad_alll_smd/) contains the all-SMD PCB variant and its project files.
 - [Gerber manufacturing files](./gerber/) are provided at the repository root.
 
-The design aims to replace the stock memory without occupying an expanded slot, keep the profile low for fit, avoid wiring sprawl, and make reverting to the original hardware straightforward.
-
 ## Bill of materials
+
+Use LS or HCT logic IC's
+The Hyundai RAM used by this design is just wat I found in my drawer. It came of a 16 MB 72pins FPM module. Any 4Mx4 DRAM / FPM layout will work. I used 60ns against the 120ns original RAM without, any problems.
 
 - [Main PCB interactive BOM](./KICAD/bom/ibom.html)
 - [All-SMD PCB interactive BOM](./kicad_alll_smd/bom/ibom.html)
