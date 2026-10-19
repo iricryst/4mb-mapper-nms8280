@@ -1,6 +1,9 @@
 # Philips NMS 8280 MSX2 4 MB Memory Mapper
 
 A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8280 MSX2, based on the original design by Hans Oranje. The board is intended to replace the stock memory while keeping the mapper at slot 3.2, with the required connections and piggybacking arranged on the PCB instead of a large wiring harness.
+<br>
+<br>
+
 
 ## Contents
 
@@ -11,18 +14,22 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 - [Issues](#issues)
 - [References and datasheets](#references-and-datasheets)
 
-
-
 <img src="./img/front.png" alt="IMG: PCB front" width="1129" height="729">
 
 <img src="./img/back.png" alt="IMG: PCB back" width="1131" height="813">
 
 Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_schema.png), and [annotated cutout diagram](./img/cutout_schema_marked.png).
+<br>
+<br>
+
 
 ## Design files
 
 - [KICAD](./KICAD/) contains the main schematic, PCB layout, and project files.
 - [Gerber manufacturing files](./gerber/) are provided at the repository root.
+<br>
+<br>
+
 
 ## Bill of materials
 
@@ -35,6 +42,9 @@ Any 4Mx4 DRAM / FPM layout will work. I used 60ns against the 120ns original RAM
 - [All-SMD PCB interactive BOM](./kicad_alll_smd/bom/ibom.html)
 
 <img src="./img/dip_sock_pin.jpeg" alt="IMG: DIP socket and rounded pins" width="1024" height="768">
+<br>
+<br>
+
 
 ## Manual
 
@@ -49,12 +59,18 @@ Use the cutout image as a reference for component locations. The J1 wiring point
 - Remove R127 and R128 (100 ohms). They are located at the red X marks in the image.
 
 <img src="./img/mb_prepared.jpg" alt="IMG: Mainboard prepared with DIP sockets and wiring" width="3060" height="2295">
+<br>
+<br>
+
 
 ### Prepare the drop-in 4 MB PCB
 
 - Assemble all SMD components.
 - Cut the required rounded pins to size for CONN133, CONN134, CONN147, CONN149, and CONN131.
 - **Do not solder the pins to the board yet.**
+<br>
+<br>
+
 
 ### Test-fit on the mainboard
 
@@ -63,6 +79,9 @@ Use the cutout image as a reference for component locations. The J1 wiring point
 - When all pins are in place and the PCB is straight and level, tack the outermost pins at the corners of the sockets to hold them in place. Keep heating time as short as possible.
 - Remove the PCB with the partially soldered pins from the mainboard.
 - Finish soldering the remaining pins, then solder IC149 and IC149B1.
+<br>
+<br>
+
 
 ### Connector J1 wiring
 
@@ -80,6 +99,9 @@ Use 30 AWG wire, or strip a floppy-disk/IDE ribbon cable.
 | J8 | IC176 pin 13 |
 | J9 | IC178 pin 5 |
 | J10 | IC178 pin 7 |
+<br>
+<br>
+
 
 ## Result & test
 
@@ -90,11 +112,17 @@ Plug in the finished PCB, carefully arranging the wires so they do not get trapp
 <img src="./img/stock_boot.jpeg" alt="IMG: Stock ROM boot screen reporting 128 KB of user RAM" width="1536" height="1152">
 
 <img src="./img/testram.jpeg" alt="IMG: RAM checker detecting 4096 KB" width="1536" height="1152">
+<br>
+<br>
+
 
 ## Issues
 
 - The 1 mm connector J1 footprint is small for comfortable hand soldering.
 - Silkscreen text could be a few pixels larger.
+<br>
+<br>
+
 
 ## References and datasheets
 
