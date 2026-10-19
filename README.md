@@ -39,7 +39,51 @@ The design aims to replace the stock memory without occupying an expanded slot, 
 
 ## Manual
 
-Assembly and installation instructions are a work in progress.
+Use the cutout image as a reference for component locations. The J1 wiring points are marked with a red dot and the corresponding wire number.
+
+![IMG: Mainboard cutout and J1 wiring locations](./img/cutout_schema_marked.png)
+
+### Prepare the mainboard
+
+- Remove the memory ICs IC133, IC134, IC135, and IC136, and replace them with DIP sockets. Only IC133 and IC134 require sockets, but socketing all original memory locations is recommended in case you need to restore the stock configuration.
+- Remove logic ICs IC147, IC149, and IC131, and replace them with DIP sockets.
+- Remove R127 and R128 (100 ohms). They are located at the red X marks in the image.
+
+### Prepare the drop-in 4 MB PCB
+
+- Assemble all SMD components.
+- Cut the required rounded pins to size for CONN133, CONN134, CONN147, CONN149, and CONN131.
+- **Do not solder the pins to the board yet.**
+
+### Test-fit on the mainboard
+
+- Fit the rounded pins into the corresponding sockets on the mainboard.
+- Fit the drop-in PCB over the pins on the corresponding connectors and sockets. Although measurements were taken twice after prototyping, a slight offset remains. Larger sockets and smaller rounded pins provide some room for error.
+- When all pins are in place and the PCB is straight and level, tack the outermost pins at the corners of the sockets to hold them in place. Keep heating time as short as possible.
+- Remove the PCB with the partially soldered pins from the mainboard.
+- Finish soldering the remaining pins, then solder IC149 and IC149B1.
+
+### Connector J1 wiring
+
+Use 30 AWG wire, or strip a floppy-disk/IDE ribbon cable.
+
+| J1 pin | Connect to |
+| --- | --- |
+| J1 | IC180 pin 12 |
+| J2 | R130, left leg when facing the mainboard as shown in the cutout image |
+| J3 | IC111 pin 11 |
+| J4 | R127, left pinhole when facing the mainboard as shown in the cutout image |
+| J5 | R128, left pinhole when facing the mainboard as shown in the cutout image |
+| J6 | IC161 pin 11 |
+| J7 | IC176 pin 11 |
+| J8 | IC176 pin 13 |
+| J9 | IC178 pin 5 |
+| J10 | IC178 pin 7 |
+
+### Known issues
+
+- The 1 mm connector J1 footprint is small for comfortable hand soldering.
+- Silkscreen text could be a few pixels larger.
 
 ## References and datasheets
 
