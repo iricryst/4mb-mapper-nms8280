@@ -13,9 +13,9 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 
 
 
-![IMG: PCB front](./img/front.png)
+<img src="./img/front.png" alt="IMG: PCB front" width="1129" height="729">
 
-![IMG: PCB back](./img/back.png)
+<img src="./img/back.png" alt="IMG: PCB back" width="1131" height="813">
 
 Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_schema.png), and [annotated cutout diagram](./img/cutout_schema_marked.png).
 
@@ -36,7 +36,7 @@ The Hyundai RAM used by this design is just wat I found in my drawer. It came of
 
 Use the cutout image as a reference for component locations. The J1 wiring points are marked with a red dot and the corresponding wire number.
 
-![IMG: Mainboard cutout and J1 wiring locations](./img/cutout_schema_marked.png)
+<img src="./img/cutout_schema_marked.png" alt="IMG: Mainboard cutout and J1 wiring locations" width="1148" height="699">
 
 ### Prepare the mainboard
 
@@ -44,7 +44,7 @@ Use the cutout image as a reference for component locations. The J1 wiring point
 - Remove logic ICs IC147, IC149, and IC131, and replace them with DIP sockets.
 - Remove R127 and R128 (100 ohms). They are located at the red X marks in the image.
 
-![IMG: Mainboard prepared with DIP sockets and wiring](./img/mb_prepared.jpg)
+<img src="./img/mb_prepared.jpg" alt="IMG: Mainboard prepared with DIP sockets and wiring" width="3060" height="2295">
 
 ### Prepare the drop-in 4 MB PCB
 
@@ -81,11 +81,11 @@ Use 30 AWG wire, or strip a floppy-disk/IDE ribbon cable.
 
 Plug in the finished PCB, carefully arranging the wires so they do not get trapped between the pin headers and DIP sockets. Power on the computer. With the stock ROM, the boot screen should report 128 KB of user RAM. Run a RAM checker to verify all 4096 KB.
 
-![IMG: Finished PCB installed in the mainboard](./img/final_fit.jpeg)
+<img src="./img/final_fit.jpeg" alt="IMG: Finished PCB installed in the mainboard" width="1152" height="1536">
 
-![IMG: Stock ROM boot screen reporting 128 KB of user RAM](./img/stock_boot.jpeg)
+<img src="./img/stock_boot.jpeg" alt="IMG: Stock ROM boot screen reporting 128 KB of user RAM" width="1536" height="1152">
 
-![IMG: RAM checker detecting 4096 KB](./img/testram.jpeg)
+<img src="./img/testram.jpeg" alt="IMG: RAM checker detecting 4096 KB" width="1536" height="1152">
 
 ## Issues
 
@@ -105,4 +105,4 @@ Plug in the finished PCB, carefully arranging the wires so they do not get trapp
 
 The RAM is an HY5117404B, represented by the custom `HYB5117400BJ` symbol in the schematic. The custom `1464` symbol does not identify a manufacturer part number, so its exact component cannot be determined from the schematic alone.
 
-![IMG: Assembled 4 MB mapper PCB](./img/72pin_fpm.jpeg)
+<img src="./img/72pin_fpm.jpeg" alt="IMG: Assembled 4 MB mapper PCB" width="1152" height="1536">
