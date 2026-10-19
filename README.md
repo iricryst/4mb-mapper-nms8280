@@ -10,6 +10,8 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 - [Design files](#design-files)
 - [Bill of materials](#bill-of-materials)
 - [Manual](#manual)
+- [Result & test](#result--test)
+- [Issues](#issues)
 - [References and datasheets](#references-and-datasheets)
 
 ## Board images
@@ -80,7 +82,19 @@ Use 30 AWG wire, or strip a floppy-disk/IDE ribbon cable.
 | J9 | IC178 pin 5 |
 | J10 | IC178 pin 7 |
 
-### Known issues
+## Result & test
+
+Plug in the finished PCB, carefully arranging the wires so they do not get trapped between the pin headers and DIP sockets. Power on the computer. With the stock ROM, the boot screen should report 128 KB of user RAM. Run a RAM checker to verify all 4096 KB.
+
+![IMG: Assembled 4 MB mapper PCB](./img/72pin_fpm.jpeg)
+
+![IMG: Finished PCB installed in the mainboard](./img/final_fit.jpeg)
+
+![IMG: Stock ROM boot screen reporting 128 KB of user RAM](./img/stock_boot.jpeg)
+
+![IMG: RAM checker detecting 4096 KB](./img/testram.jpeg)
+
+## Issues
 
 - The 1 mm connector J1 footprint is small for comfortable hand soldering.
 - Silkscreen text could be a few pixels larger.
