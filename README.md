@@ -17,16 +17,14 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 <img src="./img/front.png" alt="IMG: PCB front" width="1129" height="729">
 
 <img src="./img/back.png" alt="IMG: PCB back" width="1131" height="813">
-
-Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_schema.png), and [annotated cutout diagram](./img/cutout_schema_marked.png).
 <br>
 <br>
 
 
 ## Design files
 
-- [KICAD](./KICAD/) contains the main schematic, PCB layout, and project files.
-- [Gerber manufacturing files](./gerber/) are provided at the repository root.
+- [KICAD](./KICAD/) 
+- [Gerber files](./gerber/)
 <br>
 <br>
 
