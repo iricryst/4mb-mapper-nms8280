@@ -4,7 +4,6 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 
 ## Contents
 
-- [Board images](#board-images)
 - [Design files](#design-files)
 - [Bill of materials](#bill-of-materials)
 - [Manual](#manual)
@@ -12,13 +11,9 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 - [Issues](#issues)
 - [References and datasheets](#references-and-datasheets)
 
-## Board images
 
-Front of the PCB:
 
 ![IMG: PCB front](./img/front.png)
-
-Back of the PCB:
 
 ![IMG: PCB back](./img/back.png)
 
@@ -86,8 +81,6 @@ Use 30 AWG wire, or strip a floppy-disk/IDE ribbon cable.
 
 Plug in the finished PCB, carefully arranging the wires so they do not get trapped between the pin headers and DIP sockets. Power on the computer. With the stock ROM, the boot screen should report 128 KB of user RAM. Run a RAM checker to verify all 4096 KB.
 
-![IMG: Assembled 4 MB mapper PCB](./img/72pin_fpm.jpeg)
-
 ![IMG: Finished PCB installed in the mainboard](./img/final_fit.jpeg)
 
 ![IMG: Stock ROM boot screen reporting 128 KB of user RAM](./img/stock_boot.jpeg)
@@ -111,3 +104,5 @@ Plug in the finished PCB, carefully arranging the wires so they do not get trapp
 - [SN74LS670 datasheet](./doc/SN74LS670.pdf)
 
 The RAM is an HY5117404B, represented by the custom `HYB5117400BJ` symbol in the schematic. The custom `1464` symbol does not identify a manufacturer part number, so its exact component cannot be determined from the schematic alone.
+
+![IMG: Assembled 4 MB mapper PCB](./img/72pin_fpm.jpeg)
