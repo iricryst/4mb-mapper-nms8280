@@ -47,9 +47,13 @@ Parts not described in the interactive BOM.
 
 The Hyundai RAM used by this design is just wat I found in my drawer. It came of a 16 MB 72pins FPM module. 
 Any 4Mx4 DRAM / FPM layout will work. I used 60ns against the 120ns original RAM without, any problems.
+<br>
+
 
 - [Main PCB interactive BOM](./KICAD/bom/ibom.html)
 - [All-SMD PCB interactive BOM](./kicad_alll_smd/bom/ibom.html)
+<br>
+
 
 <img src="./img/dip_sock_pin.jpeg" alt="IMG: DIP socket and rounded pins" width="1024" height="768">
 <br>
