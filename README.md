@@ -8,6 +8,7 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 - [Design files](#design-files)
 - [Bill of materials](#bill-of-materials)
 - [Manual](#manual)
+- [Test](#test).
 - [References and datasheets](#references-and-datasheets)
 
 ## Board images
