@@ -1574,7 +1574,7 @@
 		)
 		(uuid "ffed8088-1fcb-40ec-be0d-2824b07ad810")
 	)
-	(global_label "A10_IC147B_P7"
+	(global_label "A10_IC147B_P9"
 		(shape input)
 		(at 68.58 86.36 180)
 		(fields_autoplaced yes)
@@ -1742,7 +1742,7 @@
 			)
 		)
 	)
-	(global_label "A10_IC147B_P7"
+	(global_label "A10_IC147B_P9"
 		(shape input)
 		(at 69.85 132.08 180)
 		(fields_autoplaced yes)
@@ -2387,7 +2387,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4fc60c1b-b5f9-4568-9d97-49b1d0dd6577")
 		(property "Reference" "CONN133"
 			(at 186.3041 38.1 0)
@@ -2400,7 +2399,7 @@
 			)
 		)
 		(property "Value" "Pin Header 2x9 2,54mm Rounded"
-			(at 184.15 53.34 0)
+			(at 186.69 74.168 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2597,7 +2596,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d4652a6c-8179-42f3-8f39-0a9cbb203c89")
 		(property "Reference" "CONN134"
 			(at 121.5341 38.1 0)
@@ -2610,7 +2608,7 @@
 			)
 		)
 		(property "Value" "Pin Header 2x9 2,54mm Rounded"
-			(at 119.38 53.34 0)
+			(at 112.522 30.226 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2865,4 +2863,5 @@
 			(page "2")
 		)
 	)
+	(embedded_fonts no)
 )

@@ -1,57 +1,55 @@
-# Philips NMS8280 MSX2 4MB memory mapper
+# Philips NMS 8280 MSX2 4 MB Memory Mapper
 
-![4MB mapper PCB front](./KICAD/4mbmapper_front.png)
+A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8280 MSX2, based on the original design by Hans Oranje. The board is intended to replace the stock memory while keeping the mapper at slot 3.2, with the required connections and piggybacking arranged on the PCB instead of a large wiring harness.
 
-![4MB mapper PCB back](./KICAD/4mbmapper_back.png)
+> **Prototype warning:** This design has not been verified for production use. Confirm mechanical fit and electrical operation on the prototype before building or using the board.
 
-First and foremost:
+## Contents
 
-> **WARNING:** Do not use or build this board until the correct measurements
-> have been completed on the prototype. This design has not yet been verified
-> for production use. A prototype has been ordered from JLCPCB. Precise measurements
-> will be taken soon, mechanically as well as electrically.
+- [Board images](#board-images)
+- [Design files](#design-files)
+- [Bill of materials](#bill-of-materials)
+- [Manual](#manual)
+- [References and datasheets](#references-and-datasheets)
 
-In here you will find my PCB design, based on the original design by Hans Oranje. See reference documents below. 
+## Board images
 
-My goal was to create a PCB to get rid of most of the wiring described in the original paper.
+Front of the PCB:
 
-Why design yet another PCB, while there are so many other solutions? 
+![IMG: PCB front](./img/front.png)
 
-- This design replaces the stock memory, so it doesn't occupy a (expanded) slot. It just keeps the memory at slot 3.2
-- No piggybacking IC's on the original IC's. The piggybacking still occurs, but neatly on the PCB
-- No gazzilion wires, creating spaghetti
-- Reverting back to stock should be easy
-- Profile kept as low as possible to fit
+Back of the PCB:
 
-## BOM
+![IMG: PCB back](./img/back.png)
 
-<a href="https://htmlpreview.github.io/?https://github.com/iricryst/4mb-mapper/blob/main/KICAD/bom/ibom.html" target="_blank" rel="noopener noreferrer">BOM</a>
+Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_schema.png), and [annotated cutout diagram](./img/cutout_schema_marked.png).
 
-<a href="./KICAD/bom/ibom.html" target="_blank" rel="noopener noreferrer">BOM</a>
+## Design files
 
-## Alternative PCB version
+- [KICAD](./KICAD/) contains the main schematic, PCB layout, and project files.
+- [kicad_alll_smd](./kicad_alll_smd/) contains the all-SMD PCB variant and its project files.
+- [Gerber manufacturing files](./gerber/) are provided at the repository root.
 
-The [`KICAD_670_DIP`](./KICAD_670_DIP/) folder contains a second version of the
-PCB and schematic. It is intended for the DIP-package `74LS670` variant, which
-is provided as an alternative because of market availability.
+The design aims to replace the stock memory without occupying an expanded slot, keep the profile low for fit, avoid wiring sprawl, and make reverting to the original hardware straightforward.
 
-<a href="./KICAD_670_DIP/bom/ibom.html" target="_blank" rel="noopener noreferrer">DIP version BOM</a>
+## Bill of materials
+
+- [Main PCB interactive BOM](./KICAD/bom/ibom.html)
+- [All-SMD PCB interactive BOM](./kicad_alll_smd/bom/ibom.html)
 
 ## Manual
 
-wip
+Assembly and installation instructions are a work in progress.
 
-## Reference and documentation
+## References and datasheets
 
-- [Hans Oranje paper in Dutch](./DOC/4mbnms8280.pdf)
-- [HY5117404B](./DOC/HY5117404B.pdf)
-- [SN74LS00](./DOC/SN74LS00.pdf)
-- [SN74LS08](./DOC/SN74LS08.pdf)
-- [SN74LS125](./DOC/SN74LS125.pdf)
-- [SN74LS157](./DOC/SN74LS157.pdf)
-- [SN74LS670](./DOC/SN74LS670.pdf)
+- [Hans Oranje's original 4 MB mapper paper (Dutch)](./doc/4mbnms8280.pdf)
+- [Philips NMS 8280 service manual](./doc/nms8280_service_manual.pdf)
+- [HY5117404B RAM datasheet](./doc/HY5117404B.pdf)
+- [SN74LS00 datasheet](./doc/SN74LS00.pdf)
+- [SN74LS08 datasheet](./doc/SN74LS08.pdf)
+- [SN74LS125 datasheet](./doc/SN74LS125.pdf)
+- [SN74LS157 datasheet](./doc/SN74LS157.pdf)
+- [SN74LS670 datasheet](./doc/SN74LS670.pdf)
 
-The RAM used by this design is HY5117404B, represented by the custom
-`HYB5117400BJ` symbol in the schematic. The `1464` custom symbol has no
-manufacturer part number in the schematic, so no unambiguous datasheet can be
-assigned to it.
+The RAM is an HY5117404B, represented by the custom `HYB5117400BJ` symbol in the schematic. The custom `1464` symbol does not identify a manufacturer part number, so its exact component cannot be determined from the schematic alone.

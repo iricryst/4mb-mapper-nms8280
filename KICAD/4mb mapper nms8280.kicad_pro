@@ -550,7 +550,7 @@
     "last_paths": {
       "idf": "4mb mapper nms8280.emn",
       "netlist": "",
-      "plot": "C:/1mb mapper nms8280/gerber/",
+      "plot": "X:/git/4mb-mapper/4mb-mapper/gerber/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -680,7 +680,7 @@
         "uuid": "d4d85c86-7b36-437e-bfa7-8722d5545f0a"
       }
     ],
-    "used_designators": "U1-8,C1-12,IC131B1,IC147B1,IC1-3,J1-3,CONN1-3,CONN135,IC149B1,IC180B1,IC157B1,C131B1-2,C147B1,C149B1,C157B1,C180B1,IC131C1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

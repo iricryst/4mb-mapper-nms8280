@@ -6690,30 +6690,6 @@
 	)
 	(global_label "Vcc"
 		(shape input)
-		(at 267.97 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "c1c5a270-7efc-4483-80c8-aae9cb00aa3d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 271.7207 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "Vcc"
-		(shape input)
 		(at 130.81 179.07 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7244,7 +7220,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 124.46 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7679,7 +7655,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm"
 			(at 163.83 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -8469,7 +8445,7 @@
 			)
 		)
 		(property "Value" "Pin Header 2x8 2,54mm Rounded"
-			(at 270.51 35.56 0)
+			(at 267.97 55.118 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8479,7 +8455,7 @@
 			)
 		)
 		(property "Footprint" "custom_footprints:PinHeader_2x08_P2.54mm_Vertical"
-			(at 271.526 19.304 0)
+			(at 269.748 15.748 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
