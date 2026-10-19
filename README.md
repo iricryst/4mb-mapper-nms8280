@@ -26,8 +26,10 @@ Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_sc
 
 ## Bill of materials
 
-Use LS or HCT logic IC's
-The Hyundai RAM used by this design is just wat I found in my drawer. It came of a 16 MB 72pins FPM module. Any 4Mx4 DRAM / FPM layout will work. I used 60ns against the 120ns original RAM without, any problems.
+Use LS or HCT logic IC's.
+
+The Hyundai RAM used by this design is just wat I found in my drawer. It came of a 16 MB 72pins FPM module. 
+Any 4Mx4 DRAM / FPM layout will work. I used 60ns against the 120ns original RAM without, any problems.
 
 - [Main PCB interactive BOM](./KICAD/bom/ibom.html)
 - [All-SMD PCB interactive BOM](./kicad_alll_smd/bom/ibom.html)
