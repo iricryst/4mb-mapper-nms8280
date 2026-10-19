@@ -49,6 +49,8 @@ Use the cutout image as a reference for component locations. The J1 wiring point
 - Remove logic ICs IC147, IC149, and IC131, and replace them with DIP sockets.
 - Remove R127 and R128 (100 ohms). They are located at the red X marks in the image.
 
+![IMG: Mainboard prepared with DIP sockets and wiring](./img/mb_prepared.jpg)
+
 ### Prepare the drop-in 4 MB PCB
 
 - Assemble all SMD components.
