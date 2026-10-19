@@ -32,6 +32,8 @@ The Hyundai RAM used by this design is just wat I found in my drawer. It came of
 - [Main PCB interactive BOM](./KICAD/bom/ibom.html)
 - [All-SMD PCB interactive BOM](./kicad_alll_smd/bom/ibom.html)
 
+<img src="./img/dip_sock_pin.jpeg" alt="IMG: DIP socket and rounded pins" width="1024" height="768">
+
 ## Manual
 
 Use the cutout image as a reference for component locations. The J1 wiring points are marked with a red dot and the corresponding wire number.
