@@ -31,10 +31,10 @@ A low-profile PCB implementation of the 4 MB memory mapper for the Philips NMS 8
 
 ## Bill of materials
 
-Use LS or HCT logic IC's.
-Use rounded narrow 2,54 mm pin headers
-Use stamped leaf spring dip socket, with the square holes
-  Use above combination to overcome slight misallignment of the pins against the sockets on the mainboard. 
+Use LS or HCT logic IC's.\
+Use rounded narrow 2,54 mm pin headers\
+Use stamped leaf spring dip socket, with the square holes\
+  Use above combination to overcome slight misallignment of the pins against the sockets on the mainboard.\
   I didn't have the exact measurements documented. And even with a caliper measurements tend be inaccurate.  
 
 Parts not described in the interactive BOM.
