@@ -34,6 +34,18 @@ Additional views: [connector J1](./img/j1.png), [cutout diagram](./img/cutout_sc
 ## Bill of materials
 
 Use LS or HCT logic IC's.
+Use rounded narrow 2,54 mm pin headers
+Use stamped leaf spring dip socket, with the square holes
+  Use above combination to overcome slight misallignment of the pins against the sockets on the mainboard. 
+  I didn't have the exact measurements documented. And even with a caliper measurements tend be inaccurate.  
+
+Parts not described in the interactive BOM.
+| Part | Amount  |
+| --- | --- |
+| 2x9 2,54mm DIP Socket stamped leaf spring | 2 |
+| 2x8 2,54mm DIP Socket stamped leaf spring | 2 |
+| 2x7 2,54mm DIP Socket stamped leaf spring | 1 |
+| 1x50 2,54mm Rounded precision pin headers | 2 |
 
 The Hyundai RAM used by this design is just wat I found in my drawer. It came of a 16 MB 72pins FPM module. 
 Any 4Mx4 DRAM / FPM layout will work. I used 60ns against the 120ns original RAM without, any problems.
